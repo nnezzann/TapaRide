@@ -2,8 +2,8 @@
   "name": "taparide",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r build",
+    "dev": "node init && pnpm -r --parallel dev",
+    "build": "node init && pnpm -r build",
     "test": "pnpm -r test",
     "test:integration": "pnpm --filter tapa-backend test:integration",
     "db:migrate": "pnpm --filter tapa-backend db:migrate",
